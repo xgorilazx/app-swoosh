@@ -26,7 +26,12 @@ class ViewController: UIViewController {
         // making sure the entire view is = to the entire background image
         bgimg.frame = view.frame;
     }
-
+    
+    // interface builder action is calling it (goBack -> can name it whatever as long as it contains the type: UIStoryboardSegue), this is the function that gets called when we click the back button -> this is for the back button / arrow
+    @IBAction func goBack(goBackButton: UIStoryboardSegue) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
