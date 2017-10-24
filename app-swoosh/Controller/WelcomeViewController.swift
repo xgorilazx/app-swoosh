@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var swoosh: UIImageView!
     @IBOutlet weak var bgimg: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
         bgimg.frame = view.frame;
     }
     
-    // interface builder action is calling it (goBack -> can name it whatever as long as it contains the type: UIStoryboardSegue), this is the function that gets called when we click the back button -> this is for the back button / arrow
+    // interface builder action is calling it (goBack -> can name it whatever as long as it contains the type: UIStoryboardSegue), this is the function that gets called when we click the back button -> this is for the back button / arrow -> unwindFromSegue
     @IBAction func goBack(goBackButton: UIStoryboardSegue) {
         
     }
